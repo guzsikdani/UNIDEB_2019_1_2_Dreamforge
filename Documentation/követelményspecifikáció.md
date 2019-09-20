@@ -1,23 +1,7 @@
-# Planner projekt
-## Követelményspecifikáció
+### A Könyvtár igényelt rendszere
+#### A Próbaprogram fejlesztése
+<p align="justify">Nagyban megkönnyítené a munkánkat az, ha a DreamForge cég vállalná a nyilvántartott adataink digitalizálását és a közös együttműködés elején szükségünk lesz egy kisebb programra, amely még csak az alapvető funkciókat tartalmazná, tehát az állományban történő keresést, a kölcsönzést, és a visszaszolgáltatást. Ezáltal felmérve, hogy mennyire gördülékeny az együttműködés, de főleg azért, hogy a rendszer bevezetését ne a nagyobb, ún. éles digitális környezettel teszteljük, hanem egy kisebb, csak egy adatbázist tartalmazó szoftverrel a dolgozóink hozzászoktatása végett - ez a terv illeszkedik a másik, Fenntartható vidék 3.6.10 pályázat kereteibe, amelyben az idős lakosság informatikai készségének fejlesztése a cél.</p>
 
-### Bevezetés
-### Jelenlegi helyzet
-### Vágyálomrendszer
-* végső cél, távlati elképzelés, igényelt rendszer
-* szabad szöveges leírása, hogy mit szeretnénk, megrendelő írja
-> Elképzelésünk szerint a rendszer minden folyamatot támogat. Segíti a recepciós munkáját.
-### Jelenlegi üzleti folyamatok modellje
-* ábrázolása a folyamatoknak
-* valamilyen strukturált leírása annak, hogy mi hogy történik
-* nem szabad, hogy szöveges legyen
-* szokták folyamatábraként is, lehet rajzolni hozzá folyamatábrát
-* pl.
-    * ha valaki igényel egy autót autókölcsönzésnél - kölcsönszerződés
-    * visszahozás
-    * ha van sérülés, akkor mit csinálunk
-    * új autó vásárlás
-    * ...
-* olyan folyamat, ami a vállalat életében most is van, de valahogy rendszerezettebben szeretné nyilvántartani
-### Igényelt üzleti folyamatok modellje
-* ahogy szeretnénk, hogy menjen
+<p align="justify">A kisebb program tesztelése után közreadjuk a könyvtárhasználóknak hamis “gyakorló” adatokkal, hogy őket is rávezessük a könyvtári kereső rendszer használatára, amelyet az együttműködésünk második részében később konkrétabb irányvonalakkal kidolgozunk.</p>
+
+<p align="justify">Az információalapú társadalomba integrálás mellett, a környezetvédelemmel szintén foglalkozunk: a papíros adminisztráció megszüntetése a környzetvédelmet segíti elő, élen járunk a település életében ezt a tudatosságot erősítve. Első körben részben, a másodikban pedig teljesen kiiktatva a sokszor használatos füzeteinket, amelyeket már nehéz vezetni. </p>
