@@ -12,3 +12,29 @@
 <p align="justify">Újításként az elektronikus könyvek kölcsönzési lehetőségét is szeretnénk megvalósítani nyugati példa alapján. Szükségünk van egy olyan rendszerre, ami képes kezelni a könyvtárunkba beiratkozott tagok adatait, ami a következőt foglalja magában: név, születési dátum, olvasójegyszám, elérhetőségek, kölcsönzött könyvek.</p>
 
 <p align="justify">Felhasználói felület tekintetében szeretnénk minél egyszerűbben kezelhető programot használni a mindennapok során, mivel a jelenlegi és leendő dolgozóink informatikai kompetenciájának erősítése még folyamatban van és további fejlesztéseket igényel. De, ahogy ezt már letisztáztuk a céggel, ez az idő függvénye és későbbi közös feladatunk.</p>
+
+### Jelenlegi üzleti folyamatok modellje
+Jelen állapotban minden nyilvántartással és leltározással kapcsolatos munka papíros formában történik.
+* Ha egy új olvasó kerül be a könyvtári nyilvántartásba, akkor az olvasó adatait a könyvtári dolgozó feljegyzi egy papírra, ami az olvasó nyilvántartását tartalmazza.
+    * Az új olvasó egy olvasójegyet kap, ami szintén tartalmazza ezeket az adatokat, továbbá kap egy olvasójegyszámot is, ami az olvasó egyedi azonosítójaként funkcionál.
+    * Adatok, amelyek rögzítésre kerülnek ezen folyamat során:
+        * Név
+        * Születési dátum
+        * Olvasójegyszám
+        * Telefonszám
+        * Lakcím
+        * E-mail cím
+* Az olvasójegyen van nyilvántartva, hogy az adott olvasó mikor, melyik könyvet kölcsönözte ki, illetve mennyi időre.
+    * Ezek az adatok szerepelnek a könyvtári nyilvántartásban is, a dolgozó minden olvasó esetén egy külön papírra is feljegyzi ezeket az adatokat.
+* Könyv kölcsönzése esetén a könyvtári dolgozó az olvasójegyre és a könyvtár tulajdonában lévő olvasói nyilvántartásban is feljegyzi a következő adatokat:
+    * Melyik könyvre vonatkozik a kölcsönzés
+    * Mikor történt a kikölcsönzés
+    * Legkésőbb mikorra kell visszahoznia az olvasónak a kikölcsönzött könyvet
+* Könyv kölcsönzése esetén a kikölcsönzött könyveket a könyvtári dolgozó egy, az összes könyvet tartalmazó listán az adott könyvek mellé feljegyzi az alábbiakat:
+    * Mikor került kölcsönzésre a könyv
+    * Melyik olvasójegyszámhoz tartozó olvasó kölcsönözte ki
+* Könyv visszavitele esetén a könyvtári dolgozó az olvasójegyre és a könyvtár tulajdonában lévő olvasói nyilvántartásban is feljegyzi a következő adatokat:
+    * Mikor történt a visszavitel
+    * Melyik könyveket vitte vissza az olvasó
+* Könyv visszavitele esetén a kikölcsönzött könyveket a könyvtári dolgozó egy, az összes könyvet tartalmazó listán az adott könyvek mellé feljegyzi az alábbi információt:
+    * Mikor került visszavitelre a könyv
