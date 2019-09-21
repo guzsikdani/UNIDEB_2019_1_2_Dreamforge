@@ -51,3 +51,11 @@
 <p align="justify">Az adatbázis tervben említett adatbázis táblák mindegyikéhez tartozik egy-egy POJO, azaz Plain Old Java Object, ezek kezdetleges tervét a lenti UML diagram szemlélteti. Ezek lesznek a JPA entitások.</p>
 
 ![](uml.png)
+
+### Telepítési terv
+<p align="justify">Elképzeléseink alapján az elkészült program nem fog telepítést igényelni, csupán Windows 10 64 bites operációs rendszerre és Java SE Development Kit 11-re lesz szükség a számítógépeken. Az egyszerűség kedvéért a programot egy futtatható JAR fájl segítségével lehet majd elindítani, további beállítást nem fog igényelni. A szükséges környezet megteremtésében rendelkezésre állunk szaktudásunkkal a könyvtár számára.</p>
+
+### Karbantartási terv
+<p align="justify">Felmerülő problémák esetén a Pajkaréti Közösségi Könyvtár bármikor fordulhat hozzánk a kérdéseikkel, továbbá tervezünk írni számukra egy technikai dokumentációt is, ami tulajdonképpen egy használati utasításként szolgál, hogy minél egyszerűbben megtanulhassák a program kezelését, ezáltal próbálva lecsökkenteni az esetleges felhasználói általi hibalehetőségeket.</p>
+
+<p align="justify">A szerződésben lefektetett másik programon a próbaszoftver elkészítése során elkezdünk dolgozni és Product Ownerünk - Kovács Nikolett - vállalta magára a jövőbeli kapcsolattartást is a két fél között. Miközben a nagy programunk fejlesztése történik, folyamatos figyelemmel kísérjük a már közreadott próbaverziót. A korábban megbeszéltek szerint a próbaprogram a lakossághoz kerül a digitális kompetenciájuk növelése érdekében, amely szélesebb körű tesztelést tesz lehetővé és egyúttal folyamatosan monitoringozásra kerül a lakosság igénye, a jövőbeli eredményesebb fejlesztés érdekében.</p>
