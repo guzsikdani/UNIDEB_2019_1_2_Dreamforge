@@ -21,3 +21,10 @@ A könyvtár azzal a kéréssel fordult felénk, hogy modernizáljuk a katalógu
 * Olvasók könyv-visszaszolgáltatásainak kezelése
 
 <p align="justify">A Könyvtár további funkciókat is igényel a programba, ezek közé tartozik például az új olvasók felvétele, a meglévő olvasók adatainak módosítása, illetve a teljes könyvállomány megtekintése. A próbaprogram fejlesztése során ezeket viszont nem tudjuk biztosítani.</p>
+
+### Az általunk tervezett rendszer felépítése, elemei, funkciói
+<p align="justify">A programot Windows 10 64 bites operációs rendszeren tervezzük futtatni. A könyvtár számítógépeinek hardvere jelenleg ezt nem teszi lehetővé, de a CsodaKönyvtár 1.14.4 országos pályázat keretein belül tervezik a számítógépeinek lecserélését is, így mire a szoftver átadható állapotba kerül, a könyvtár számítógépei is alkalmasak lesznek az operációs rendszer, illetve a próbaprogram futtatására.</p>
+
+<p align="justify">A programot úgy tervezzük kivitelezni, hogy ne igényeljen telepítést, ezáltal is könnyítve a könyvtár számítógépein történő üzembe helyezést.</p>
+
+<p align="justify">A program a könyvtári dolgozó számítógépén fog futni. A könyvtári dolgozó érdekében a felhasználói felületet úgy tervezzük megvalósítani, hogy minél egyszerűbben használható legyen. Ehhez az elképzelésünk a következő:</p>
