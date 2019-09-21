@@ -5,3 +5,10 @@
 <p align="justify">A kisebb program tesztelése után közreadjuk a könyvtárhasználóknak hamis “gyakorló” adatokkal, hogy őket is rávezessük a könyvtári kereső rendszer használatára, amelyet az együttműködésünk második részében később konkrétabb irányvonalakkal kidolgozunk.</p>
 
 <p align="justify">Az információalapú társadalomba integrálás mellett, a környezetvédelemmel szintén foglalkozunk: a papíros adminisztráció megszüntetése a környzetvédelmet segíti elő, élen járunk a település életében ezt a tudatosságot erősítve. Első körben részben, a másodikban pedig teljesen kiiktatva a sokszor használatos füzeteinket, amelyeket már nehéz vezetni. </p>
+
+#### A jövő tervei
+<p align="justify">Ha a tesztünk és a közös együttműködés sikeres, a modernizáció második lépésenként szeretnénk digitalizálni a nyilvántartási rendszerünket, illetve a leltározási folyamatot. Szeretnénk, hogy a leltáron található könyvek, a munkafolyamatok, a munkaerői és a felhasználói aktivitás egyaránt könnyedén követhetőek legyenek. Ehhez egy olyan programra van szükségünk, amely képes egy adminisztrátor közreműködésének segítségével felügyelni az alkalmazottak hozzáférését és aktivitását, mindazonáltal valós időben visszajelezni az állományban történő változásokról.</p>
+
+<p align="justify">Újításként az elektronikus könyvek kölcsönzési lehetőségét is szeretnénk megvalósítani nyugati példa alapján. Szükségünk van egy olyan rendszerre, ami képes kezelni a könyvtárunkba beiratkozott tagok adatait, ami a következőt foglalja magában: név, születési dátum, olvasójegyszám, elérhetőségek, kölcsönzött könyvek.</p>
+
+<p align="justify">Felhasználói felület tekintetében szeretnénk minél egyszerűbben kezelhető programot használni a mindennapok során, mivel a jelenlegi és leendő dolgozóink informatikai kompetenciájának erősítése még folyamatban van és további fejlesztéseket igényel. De, ahogy ezt már letisztáztuk a céggel, ez az idő függvénye és későbbi közös feladatunk.</p>
