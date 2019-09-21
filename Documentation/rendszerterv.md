@@ -46,3 +46,8 @@
     * Ezt a réteget reprezentálják a Controller osztályok
 
 <p align="justify">Az átláthatóság érdekében a projekt könyvtárszerkezetét is ehhez igazodva tervezzük létrehozni.</p>
+
+### Implementációs terv
+<p align="justify">Az adatbázis tervben említett adatbázis táblák mindegyikéhez tartozik egy-egy POJO, azaz Plain Old Java Object, ezek kezdetleges tervét a lenti UML diagram szemlélteti. Ezek lesznek a JPA entitások.</p>
+
+![](uml.png)
