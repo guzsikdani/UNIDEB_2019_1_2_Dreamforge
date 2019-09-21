@@ -1,3 +1,18 @@
+### Üzleti szereplők
+<p align="justify">Jelen projektben az üzleti oldalon a Pajkaréti Közösségi Könyvtár áll, legfőképp annak könyvtári dolgozója, mivel ő lesz az, aki az elkészült programot használni fogja. A Könyvtárral a fejlesztőcsapat a Product Owner segítségével kommunikál, ő az a személy, aki a visszajelzéseket közvetíti az üzleti és a fejlesztői oldal képviselői számára.</p>
+
+### Üzleti követelmények
+<p align="justify">A Pajkaréti Közösségi Könyvtár által támasztott követelményeket követi a projekt. Azaz vállaljuk egy olyan Windows 10 60 bites operációs rendszeren futó, telepítést nem igénylő program megvalósítását, amelyen keresztül a könyvtári dolgozó nyilván tudja tartani a könyvek kölcsönzését és visszaszolgáltatását, illetve a program segítségével az állományban történő keresést is meg tudja valósítani. További elvárás az is a Könyvtár részéről, hogy a megadott határidőre (2019. szeptember 30.) elkészüljön a program.</p>
+
+### Üzlet által elvárt funkciók
+<p align="justify">A Pajkaréti Közösségi Könyvtár elsősorban egy próbaprogram fejlesztését bízta cégünkre. Értelmezésünk szerint ezt a programot a későbbiekben további funkciókkal szeretnék ellátni. A próbaprogramot tehát tekinthetjük egy Minimum Viable Productnak, amit a későbbiekben szándékozunk továbbfejleszteni, ha a Könyvtárral való együttműködés sikeresnek bizonyul.</p>
+
+<p align="justify"> Ezek alapján tehát a próbaprogram az alábbi funkcionalitásokat szükséges, hogy tartalmazza:</p>
+
+* A Könyvtár állományában történő keresés
+* Olvasók könyvkölcsönzéseinek kezelése
+* Olvasók könyv-visszaszolgáltatásainak kezelése
+
 ### Környezet és használt technológiák, eszközök
 <p align="justify">Az elkészült program a Pajkaréti Közösségi Könyvtár számítógépein fog futni, amelyek jelen állapotukban nem alkalmasak arra, hogy a Windows 10 64 bites operációs rendszert futtassák, viszont a CsodaKönyvtár 1.14.4 országos pályázat keretein belül tervezik ezen számítógépek komponenseinek lecserélését, ezáltal az operációs rendszer és a program futtatása már nem fog gondot okozni. Azért ezt az operációs rendszert választottuk, mivel az erre a platformra történő fejlesztésben van a csapatunknak tapasztalata, illetve fontos szempont volt az is, hogy a választott operációs rendszer hosszú távon támogatott legyen. A CsodaKönyvtár 1.14.4 országos pályázat várhatóan biztosítani fogja az operációs rendszer licenszek megvásárlásához szükséges pénzügyi keretet is. Ha a Könyvtár igényli, akkor biztosítani tudunk számukra szakembereket, akik segíteni tudnak az operációs rendszer megfelelő feltelepítésében.</p>
 
