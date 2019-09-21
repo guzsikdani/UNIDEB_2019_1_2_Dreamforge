@@ -31,3 +31,18 @@
 <p align="justify">A hibakeresésben fontos szerepet játszik a logolás, úgy gondoljuk, hogy a hasznos log üzenetek jelentősen megkönnyíthetik a fejlesztők életét. Emiatt tervezzük valamelyik lightweight logolási keretrendszer használatát is. Többféle ilyennel is van már korábbi tapasztalatunk, pl. SLF4J, TinyLog, Java.util.logging, Logback, Log4j. A fejlesztőcsapat ezen projekt során várhatóan az SLF4J-t felhasználva fogja kezelni a logolást. A logolásra nem tervezünk konkrét log fájl létrehozását, illetve abba való kiíratást, hanem csak egyszerűen a standard outputra fogunk hagyatkozni.</p>
 
 <p align="justify">Az egyszerű futtatás érdekében az elkészült programhoz szeretnénk az Apache Maven Shade Plugin segítségével egy futtatható JAR fájlt is létrehozni.</p>
+
+### Architekturális terv
+<p align="justify">Szoftverarchitektúrák tekintetében a Model-View-Controller, azaz az MVC szerkezeti mintát tervezzük követni. Ez alapján a szoftvert 3 szerkezeti részre lehet felosztani:</p>
+
+1. Modell (Model)  
+    * Az alkalmazás által kezelt adatokat, illetve az üzleti logikát tartalmazza, független a megjelenítéstől
+    * Ezt a réteget reprezentálják a perzisztens adatkezelés megvalósításához felhasznált POJO-k
+2. Nézet (View)  
+    * A felhasználói felület, amely a felhasználó számára prezentálja az alkalmazás adatait
+    * Ezt a réteget reprezentálják a kinézetért felelős FXML fájlok
+3. Vezérlő (Controller)  
+    * Kezeli a felhasználótól származó bemenetet és ez alapján a modell vagy a nézet felé szolgáltatáskéréseket tesz
+    * Ezt a réteget reprezentálják a Controller osztályok
+
+<p align="justify">Az átláthatóság érdekében a projekt könyvtárszerkezetét is ehhez igazodva tervezzük létrehozni.</p>
