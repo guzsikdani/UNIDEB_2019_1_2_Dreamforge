@@ -15,7 +15,36 @@
 
 <p align="justify">Úgy hisszük, hogy a code review is nagyban hozzájárul ahhoz, hogy a program a megfelelő minőségben kerüljön a felhasználók elé, emiatt tervezzük rendszeresen átnézni és véleményezni az általunk írt programsorokat.</p>
 
+### Projektszerepkörök és felelősségeik
+<p align="justify">A cég 4 fős csapata fog dolgozni a projekten. A kis létszámból adódóan nincsenek hagyományos értelemben vett szerepkörök definiálva, mindenki igyekszik a legtöbb munkálatba belefolyni. Azonban vannak olyan területek, amihez egy bizonyos személy jobban ért, mint a többiek, ezért úgy éreztük, hogy fontos az, hogy bizonyos részterületekhez kinevezzünk egy-egy felelőst, akihez a felmerülő problémák esetén lehet fordulni. A felelősök megnevezése, az általuk reprezentált speciális területtel:</p>
 
+* Kovács Nikolett: kinézet, felhasználói felület
+* Kövér Krisztián: adatok kezelése
+* Sárvári Dániel: tesztelés
+* Nagy Márta: programhelyesség
+
+<p align="justify">Ahogy az már korábban említésre került, a csapat a Scrum módszertant követi, annak minden szabályának betartásával együtt. Ennek fényében szükséges további szerepkörök definiálása, ami az alábbiak szerint alakul:</p>
+
+* Nagy Márta: Scrum Master
+    <p align="justify">A szerepkör lényege, hogy biztosítsa a fejlesztőcsapatban a Scrum elvek betartását. Ő felelős azért, hogy a Scrum Meetingek megfelelően legyenek lebonyolítva, illetve hogy annak szabályai is teljesülnek. Feladata egy olyan környezet megteremtése, amelyben a csapat effektíven dolgozhat. Ha a csapat valamilyen akadályba ütközik, akkor a Scrum Master feladata, hogy elhárítsa azt. Fontos azonban látni, hogy a Scrum Master nem tekinthető projektvezetőnek, mivel a csapatnak önszerveződő.</p>
+* Kovács Nikolett: Product Owner
+    <p align="justify">A szerepkör felelősségteljes pozíció abban az ügyben, hogy a fejlesztőcsapat által elkészített termék a legmagasabb minőséget képviselje. Ő a felelős a kapcsolattartásért, amely során közvetítő szerepet tölt be a két fél között - jelen esetben a Könyvtár és a fejlesztőcsapat vonatkozásában. Egyeztet a Könyvtárral, hogy az elképzeléseiket megfelelően továbbítani tudja a fejlesztőcsapat felé, ezáltal meghatározva a csapat feladatainak prioritásait is. Biztosítja, hogy a csapat számára a Product Backlog érthető, és tiszta legyen, hogy világosan láthassa a csapat, hogy min szükséges dolgozniuk. Jelentős szerepet tölt be annak érdekében, hogy a program az igényeknek legmegfelelőbb legyen. Ehhez szükséges a magas fokú empátiakészség, a türelem és a jó kommunikációs képesség megléte.</p>
+
+### Ütemterv
+<p align="justify">A Könyvtár által megszabott határidőt (2019. szeptember 16. - 2019. szeptember 30.), azaz a 2 hetes keretet mindenképpen be kell tartanunk, ami miatt az ütemterv meglehetősen sűrűnek bizonyul.</p>
+<p align="justify">A Scrum által meghatározott Scrum Meetingeket mindenképpen meg fogjuk szervezni, ezek lebonyolításáért a Scrum Masterünk felel.
+Mivel a teljes projektre 2 hét áll rendelkezésünkre, így ezt 1 sprinten belül szükséges végrehajtanunk. Ezek alapján a sprint az alábbi Scrum Meetingeket foglalja magában:</p>
+
+* Daily Scrum: minden nap ugyanabban az időpontban, 15 percben lebonyolítva
+    * Ezen találkozó keretein belül tudunk beszélni az aktuális napi előrehaladásunkról
+* Sprint Planning: 2019. szeptember 16-án
+    * Ezen találkozó keretein belül tervezzük meg a teljes sprint menetét, illetve annak szükséges feladatait
+* Backlog Grooming: 2019. szeptember 23-án
+    * Ezen találkozó keretein belül tudunk finomítani az elképzeléseinken, ha a sprint során úgy érezzük, hogy valami változásra szorul
+* Sprint Review: 2019. szeptember 30-án
+    * Ezen találkozó keretein belül mutatjuk be az elkészült programot
+* Sprint Retrospective: 2019. szeptember 30-án
+    * Ezen találkozó keretein belül beszéljük át a véghezvitt sprint sikerességét, illetve hogy mi az, amin az elkövetkező sprintek során javítani lehetne
 
 ### Üzleti szereplők
 <p align="justify">Jelen projektben az üzleti oldalon a Pajkaréti Közösségi Könyvtár áll, legfőképp annak könyvtári dolgozója, mivel ő lesz az, aki az elkészült programot használni fogja. A Könyvtárral a fejlesztőcsapat a Product Owner segítségével kommunikál, ő az a személy, aki a visszajelzéseket közvetíti az üzleti és a fejlesztői oldal képviselői számára.</p>
