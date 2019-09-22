@@ -3,6 +3,15 @@
 
 <p align="justify">Így a CsodaKönyvtár 1.14.4 másik fejlesztési lehetőségét vettük igénybe, amely során a DreamForge szoftverfejlesztő céggel hosszútávú fejlesztésekben gondolkodunk, első körben egy kis próbaprogrammal, a második körben - ha minden a tervek szerint halad - egy éven belül a teljes könyvtári adminisztráció lecserélését megvalósítva egy nagyobb projekttel, ami magában foglalja a kölcsönzést és az állománykezelést, továbbá a használók adatainak tárolását a GDPR irányelveinek megfelelően.</p>
 
+### A könyvtár jelenlegi helyzete
+<p align="justify">A Pajkaréti Községi Könyvtár jelenlegi állapotában a könyvtár működtetését egyetlen dolgozó végzi, aki egy személyben végzi el a könyvelői, könyvtárosi, takarítói, ruhatárosi, raktárosi, logisztikai, tűz- és katasztrófavédelmi felelősi szerepeket is. Ezen helyzet javítása érdekében szeretnénk a CsodaKönyvtár 1.14.4 országos pályázat keretein belül könyvtárunkat európai színvonalúnak megfelelővé fejleszteni.</p>
+
+<p align="justify">Jelenlegi helyzetében a könyvtár működése teljes egészében kézzel vezetett nyilvántartással valósul meg, illetve a nem valósidejű leltározás is további problémákat vet fel. Egyetlen alkalmazottunk szabadságolása nehézkes és ennek érdekében szükséges a további dolgozók felvétele, amelyet mi a Fenntartható vidék 3.6.10 keretein belül szépkorúak munkába állításával oldanánk meg, keresetkiegészítés formájában, napi bejelentéssel. Az informatikai rendszerbe történt integrálásuk nem teljeskörű, ezért egy próbaprogram szükséges lehet számukra, ennek a ténynek a javítása érdekében.</p>
+
+<p align="justify">A könyvtárunk élen kíván járni a környezetvédelem dolgában és ennek a biztosítására már történtek kísérletek, ennek folyománya a közösségi hulladékszedés és a speciális gazdálkodás, amelyhez büszkén biztosítottuk a megfelelő tudásanyagot, az internet segítségével, ebbe illeszkedne a papír alapú kölcsönzés, illetve adminisztráció megszüntetése, amellyel a papírfelhasználást mérsékelnénk és jó példával járnánk elöl különféle helyi kisvállalkozások szemében.</p>
+
+<p align="justify">Illetve a könyvtárunk hatékonysága is javítása szorul: szeretnénk faragni az anyagok költségein, illetve az időgazdalkodás sem a legjobb, egy modernebb rendszer sokat segítene az időnként feltorlódott sorok lecsökkentésében.</p>
+
 ### A Könyvtár igényelt rendszere
 #### A Próbaprogram fejlesztése
 <p align="justify">Nagyban megkönnyítené a munkánkat az, ha a DreamForge cég vállalná a nyilvántartott adataink digitalizálását és a közös együttműködés elején szükségünk lesz egy kisebb programra, amely még csak az alapvető funkciókat tartalmazná, tehát az állományban történő keresést, a kölcsönzést, és a visszaszolgáltatást. Ezáltal felmérve, hogy mennyire gördülékeny az együttműködés, de főleg azért, hogy a rendszer bevezetését ne a nagyobb, ún. éles digitális környezettel teszteljük, hanem egy kisebb, csak egy adatbázist tartalmazó szoftverrel a dolgozóink hozzászoktatása végett - ez a terv illeszkedik a másik, Fenntartható vidék 3.6.10 pályázat kereteibe, amelyben az idős lakosság informatikai készségének fejlesztése a cél.</p>
