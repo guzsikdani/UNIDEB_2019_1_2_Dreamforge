@@ -29,13 +29,21 @@ A könyvtár azzal a kéréssel fordult felénk, hogy modernizáljuk a katalógu
 
 <p align="justify">A program a könyvtári dolgozó számítógépén fog futni. A könyvtári dolgozó érdekében a felhasználói felületet úgy tervezzük megvalósítani, hogy minél egyszerűbben használható legyen. Ehhez az elképzelésünk a következő:</p>
 
+<p align="justify">Alapvetően három felületen tervezzük megjeleníteni a fő funkciókat:</p>
 
+1. Főablak, a keresési felület ablakja  
+    <p align="justify">A főablaknak a keresési felület tekinthető, és ebből nyílik további két ablak. A program megnyitása után a keresési felület ablakát láthatjuk. Ezen keresztül elérhetjük a könyvállomány minden elemét, és láthatjuk, hogy ezek jelenleg elérhetőek-e kölcsönzésre avagy már kikölcsönzött állapotban vannak. A keresés folyamán a könyv rendszerben lévő adatai jelennek meg (Cutter-szám, szerző, cím, elérhetőség állapota), táblázatos formában.</p>
 
 2. Kölcsönzési felület  
 <p align="justify">A könyvtári dolgozó számára továbbá elérhető a kölcsönzés kezelési felülete is. A felület tartalmazza az olvasók listáját, amely egyedi azonosító és név formában jelenik meg (elősegítve a hasonló nevű olvasók megkülönböztetését). Az olvasó kiválasztása után a kikölcsönözni kívánt könyvre annak Cutter-számával lehet hivatkozni. Ezen két komponens kiválasztása után a program automatikus választ biztosít a tranzakció végrehajthatóságáról. A tranzakciót a jobb alsó sarokban található Elfogad gombbal lehet véglegesíteni. A tranzakció lezárása után a kölcsönzést kezelőfelület automatikusan bezárul.</p>
 
+3. Visszaszolgáltatási felület  
+    <p align="justify">A visszaszolgáltatásért felelős felületen a könyvtári dolgozó lenyíló listából választhatja ki a jelenleg elérhető tranzakciókat amelyek a kikölcsönző neve és kikölcsönzött könyv címe formában jelenik majd meg. Ezt kiválasztva a dolgozó megkapja a tranzakció összes információját (tranzakció azonosítója, kölcsönző neve,  kikölcsönzött könyv címe, kölcsönzés dátuma, kölcsönzési határidő és visszaszolgáltatás ideje, ez utóbbi alapértelmezetten üres). Az ablak alsó részén található “Lezárás” gombbal lehet a tranzakciót lezárni, melynek hatására a program a visszaszolgáltatás idejét átállítja a jelenlegi dátumra. Az ablak lezárás után automatikusan bezáródik, lezárás nélkül a felhasználó manuálisan kell bezárja a felhasználói felületet.</p>
 
+### Használati eset diagram
+<p align="justify">A könyvtári dolgozó számára a program által nyújtott funkciók szemléltetéséhez az alábbi használati eset diagramot hoztuk létre:</p>
 
+![](useCaseDiagram.png)
 
 ### Tervezett kinézet
 <p align="justify">A cégünk saját grafikai részleggel rendelkezik, ezért fontosnak tartjuk a tervezési fázisban az általunk tervezett grafikus megoldások használatát. A Narvál 1.0 rendszer saját fejlesztésünk, amely egy projektsorozat első próbaprogramja és amelyet a Könyvtár számára rendelkezésre bocsátunk az elkészítését követően saját logóval, saját színes felülettel.</p>
