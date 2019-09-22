@@ -1,3 +1,9 @@
+# Könyvtár program
+## Követelményspecifikáció
+
+### Bevezetés
+<p align="justify">A könyvtár a tudás tára. Szükséges a modernizálása, hogy az új technológiák és az újonnan felmerült tudás iránti vágyat ki tudja szolgálni. Ahogy a világ változik, szükséges megújulnia a könyvtáraknak is. A CsodaKönyvtár 1.14.4 országos pályázat keretein belül történik ez a modernizálás a DreamForge szoftverfejlesztő cég erőforrásainak bevonásával. Ez a pályázat azt a célt szolgálja, hogy a lakosság informatikai kompetenciáját erősítse, ami magában foglalja a dolgozók informatikai képességeinek fejlesztését, illetve az általuk használt eszközök modernizálását is.</p>
+
 #### CsodaKönyvtár 1.14.4 országos pályázat
 <p align="justify">A CsodaKönyvtár 1.14.4 országos pályázat több elemből épül fel, de elsősorban az intézmények informatikai hátterének biztosítása alkotja a pályázható irányvonalak nagy részét, ez több lehetőséget rejt magában, egyrészt a hardveres fejlesztést, amit a jövőbeli terveink alapján szeretnénk a következő tender időszakban kihasználni, hiszen a jelenlegiben nem állnak fent a pályázáshoz szükséges feltételek és fontosabbnak érezzük a szoftveres rendszerünk modernizálását, hiszen a könyvtárunk rendelkezik öt darab személyi számítógéppel, ami egyelőre kielégíti a kis számú érdeklődőket, de elsősorban a papír alapú adminisztrációnk fejlesztését tűztük ki célul.</p>
 
@@ -52,3 +58,20 @@ Jelen állapotban minden nyilvántartással és leltározással kapcsolatos munk
     * Melyik könyveket vitte vissza az olvasó
 * Könyv visszavitele esetén a kikölcsönzött könyveket a könyvtári dolgozó egy, az összes könyvet tartalmazó listán az adott könyvek mellé feljegyzi az alábbi információt:
     * Mikor került visszavitelre a könyv
+
+### Igényelt üzleti folyamatok modellje
+A fent részletezett folyamatokat szeretnénk egy program segítségével megvalósítani, az alábbi módon elképzelve:
+* A könyvtári dolgozó tud csak hozzáférni a programhoz.
+* A program tartalmazza a könyvtár állományában lévő összes könyvet, illetve a könyvekhez tartozó kölcsönzéseket.
+* A program kezeli a könyvtár olvasóit, illetve azok adatait, és a kölcsönzéseiket.
+* A program segítségével a könyvtári dolgozó megfelelő funkciók igénybevételével tudja az alábbiakat megvalósítani:
+    * Könyvkölcsönzés nyilvántartása
+        * Melyik könyv van éppen kikölcsönözve
+        * Melyik könyv elérhető
+        * Melyik olvasó milyen könyveket kölcsönzött ki, és milyen időpontokban, illetve mikorra kell legkésőbb visszavinnie
+        * Könyvkölcsönzés esetén az érintett könyvek állapotának kikölcsönzöttre állítása
+        * Könyvkölcsönzés esetén az olvasó által kikölcsönzött könyvek listájának beállítása, kikölcsönzési dátummal és legkésőbbi visszaviteli dátummal együtt
+        * Könyv visszavitel esetén az érintett könyvek állapotának elérhetőre állítása
+        * Könyv visszavitel esetén az olvasó által kikölcsönzött könyvek listájához hozzáadni a visszaviteli dátumot
+    * Új olvasók hozzáadása a meglévőkhöz
+        * Az új olvasó minden adatával együtt kerüljön bele az olvasók listájába
