@@ -32,4 +32,17 @@ A könyvtár azzal a kéréssel fordult felénk, hogy modernizáljuk a katalógu
 
 
 2. Kölcsönzési felület  
-    <p align="justify">A könyvtári dolgozó számára továbbá elérhető a kölcsönzés kezelési felülete is. A felület tartalmazza az olvasók listáját, amely egyedi azonosító és név formában jelenik meg (elősegítve a hasonló nevű olvasók megkülönböztetését). Az olvasó kiválasztása után a kikölcsönözni kívánt könyvre annak Cutter-számával lehet hivatkozni. Ezen két komponens kiválasztása után a program automatikus választ biztosít a tranzakció végrehajthatóságáról. A tranzakciót a jobb alsó sarokban található Elfogad gombbal lehet véglegesíteni. A tranzakció lezárása után a kölcsönzést kezelőfelület automatikusan bezárul.</p>
+<p align="justify">A könyvtári dolgozó számára továbbá elérhető a kölcsönzés kezelési felülete is. A felület tartalmazza az olvasók listáját, amely egyedi azonosító és név formában jelenik meg (elősegítve a hasonló nevű olvasók megkülönböztetését). Az olvasó kiválasztása után a kikölcsönözni kívánt könyvre annak Cutter-számával lehet hivatkozni. Ezen két komponens kiválasztása után a program automatikus választ biztosít a tranzakció végrehajthatóságáról. A tranzakciót a jobb alsó sarokban található Elfogad gombbal lehet véglegesíteni. A tranzakció lezárása után a kölcsönzést kezelőfelület automatikusan bezárul.</p>
+
+
+
+
+### Tervezett kinézet
+<p align="justify">A cégünk saját grafikai részleggel rendelkezik, ezért fontosnak tartjuk a tervezési fázisban az általunk tervezett grafikus megoldások használatát. A Narvál 1.0 rendszer saját fejlesztésünk, amely egy projektsorozat első próbaprogramja és amelyet a Könyvtár számára rendelkezésre bocsátunk az elkészítését követően saját logóval, saját színes felülettel.</p>
+
+### Jelenlegi üzleti folyamatok modellje
+<p align="justify">A Pajkaréti Közösségi Könyvtár által nyújtott követelményspecifikációban leírtak szerint.</p>
+
+### Tervezett üzleti folyamatok modellje
+<p align="justify">Igyekszünk a Pajkaréti Közösségi Könyvtár által nyújtott követelményspecifikációban leírtaknak minden pontban megfelelő rendszert létrehozni, viszont az új olvasók hozzáadását a próbaprogram fejlesztése során nem tudjuk biztosítani.</p>
+
