@@ -46,3 +46,6 @@ A könyvtár azzal a kéréssel fordult felénk, hogy modernizáljuk a katalógu
 ### Tervezett üzleti folyamatok modellje
 <p align="justify">Igyekszünk a Pajkaréti Közösségi Könyvtár által nyújtott követelményspecifikációban leírtaknak minden pontban megfelelő rendszert létrehozni, viszont az új olvasók hozzáadását a próbaprogram fejlesztése során nem tudjuk biztosítani.</p>
 
+### Kapcsolódó pályázatok
+Az alábbi pályázat kapcsolódik a projekthez:
+* CsodaKönyvtár 1.14.4
