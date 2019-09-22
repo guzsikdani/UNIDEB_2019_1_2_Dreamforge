@@ -1,3 +1,22 @@
+# Könyvtár projekt
+## Rendszerterv
+
+### A rendszer célja
+<p align="justify">A jelen dokumentumban részletezett rendszer célja, hogy egy könnyen áttekinthető és kezelhető felületet biztosítson a Pajkaréti Közösségi Könyvtár dolgozója számára, amin keresztül keresni tud a Könyvtár állományában, és kezelni tudja a kölcsönzéseket illetve a visszaszolgáltatásokat is. A szoftver később a lakosság egyik oktatóprogramja lehet a könyvtáron belül szervezett foglalkozások keretein belül és a felhasználók által keltett igényeneknek meg kell feleljen, ez pedig az egyszerűség és a könnyen tanulhatóság. A közönség szimpátiájának elnyerése miatt a próbaprogram neve a Narvál 1.0, amelyre ezután többnyire így hivatkozunk.</p>
+
+### A projekt során követett szemléletmód
+<p align="justify">A DreamForge szoftverfejlesztő cég fontosnak tartja, hogy a kezükből kiadott termék a legmagasabb minőséget képviselje. Úgy hisszük, ennek lételeme az is, hogy folyamatos kapcsolatban legyünk a megbízóinkkal, hogy kölcsönös visszajelzéseket tudjunk biztosítani egymás számára.</p>
+
+<p align="justify">Ezen szemléletből fakadóan a cég agilis módszertanokat követ a fejlesztés során, konkrétan Kanbant és Scrumot. A Kanban megvalósításáért a csapatunkban a Trello nevű projektmenedzsment eszköz felel, ahol precíz módon, a legalapvetőbb lépésekig le tudjuk osztani a feladatokat és az egyéni megbeszélések helyeit, időpontjait, továbbá a kick-off meetinget is.</p>
+
+<p align="justify">A csapaton belüli kommunikáció is jelentős szereppel bír a projekt megvalósítása során. Elsődlegesen élőszóban próbálunk mindent megbeszélni, azonban amikor ez nem kivitelezhető, a Slack nevű alkalmazást használjuk a csapaton belüli kommunikáció megvalósítására. </p>
+
+<p align="justify">Csapatunk tagjait a csapatmunkára alkalmas készségeik miatt választották ki a nagyobb céges csapatból erre a munkára, továbbá fontos, hogy korábbi előismeretekkel rendelkezünk más projektek kapcsán, amelyeket fel fogunk használni a könyvtári Narvál 1.0 fejlesztésekor.</p>
+
+<p align="justify">Úgy hisszük, hogy a code review is nagyban hozzájárul ahhoz, hogy a program a megfelelő minőségben kerüljön a felhasználók elé, emiatt tervezzük rendszeresen átnézni és véleményezni az általunk írt programsorokat.</p>
+
+
+
 ### Üzleti szereplők
 <p align="justify">Jelen projektben az üzleti oldalon a Pajkaréti Közösségi Könyvtár áll, legfőképp annak könyvtári dolgozója, mivel ő lesz az, aki az elkészült programot használni fogja. A Könyvtárral a fejlesztőcsapat a Product Owner segítségével kommunikál, ő az a személy, aki a visszajelzéseket közvetíti az üzleti és a fejlesztői oldal képviselői számára.</p>
 
