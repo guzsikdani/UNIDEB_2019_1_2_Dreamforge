@@ -97,7 +97,7 @@ Mivel a teljes projektre 2 hét áll rendelkezésünkre, így ezt 1 sprinten bel
 
 <p align="justify">Az átláthatóság érdekében a projekt könyvtárszerkezetét is ehhez igazodva tervezzük létrehozni.</p>
 
-<p align="justify>A perzisztens adatokhoz való hozzáférést adatelérési objektumok, azaz DAO-k fogják biztosítani.</p>
+<p align="justify">A perzisztens adatokhoz való hozzáférést adatelérési objektumok, azaz DAO-k fogják biztosítani.</p>
 
 ### Adatbázis terv
 Elképzeléseink szerint az adatbázis három táblát fog tartalmazni, amelyek a következők:
