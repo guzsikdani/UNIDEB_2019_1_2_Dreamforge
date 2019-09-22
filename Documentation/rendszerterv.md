@@ -66,10 +66,42 @@
 
 <p align="justify">Az átláthatóság érdekében a projekt könyvtárszerkezetét is ehhez igazodva tervezzük létrehozni.</p>
 
+### Adatbázis terv
+Elképzeléseink szerint az adatbázis három táblát fog tartalmazni, amelyek a következők:
+* Book  
+    Ez a tábla tartalmazza a könyvállomány könyveit, illetve azok adatait:
+    * Egyedi azonosító (Cutter-szám)
+    * Cím
+    * Szerző
+    * Elérhető-e jelenleg kölcsönzésre a könyvtárban
+* User  
+    Ez a tábla tartalmazza a könyvtár olvasóit, illetve azok adatait:
+    * Egyedi azonosító (olvasójegyszám)
+    * Név
+    * Születési dátum
+    * Telefonszám
+    * Lakcím
+    * Email cím
+* Borrowing  
+    Ez a tábla tartalmazza a kölcsönzéseket, illetve azok adatait:
+    * Egyedi azonosító (kölcsönzési azonosító)
+    * A kölcsönzéshez tartozó könyv egyedi azonosítója
+    * A kölcsönzést kezdeményező olvasó egyedi azonosítója
+    * A kölcsönzés kezdete
+    * A kölcsönzés vége (ha nincs értéke, akkor az adott könyv még nem került visszaszolgáltatásra a kölcsönző által)
+    * A kölcsönzés határideje (az az idő, amikor legkésőbb vissza kell vinnie az olvasónak a kikölcsönzött könyvet)
+    
+A Book és a Borrowing táblák között 1:1 kapcsolat áll fenn, a User és a Borrowing között pedig 1:N, mivel:
+* Egy könyvhöz csak egy kölcsönzés tartozhat, és egy kölcsönzéshez is egy könyv tartozhat (mivel a könyvek egyedi azonosító szerint vannak tárolva).
+* Egy olvasóhoz tartozhat több kölcsönzés is, viszont egy kölcsönzés csak egy olvasóhoz tartozhat.
+
 ### Implementációs terv
 <p align="justify">Az adatbázis tervben említett adatbázis táblák mindegyikéhez tartozik egy-egy POJO, azaz Plain Old Java Object, ezek kezdetleges tervét a lenti UML diagram szemlélteti. Ezek lesznek a JPA entitások.</p>
 
 ![](uml.png)
+
+### Tesztelési terv
+<p align="justify">A határidő közelsége miatt, illetve a viszonylag kevés funkcionalitásból adódóan csupán manuális tesztet tervezünk végrehajtani a programon. Ezt egy megfelelő tesztelési dokumentációban tervezzük dokumentálni. Igyekszünk a lehető legtöbb szempontot figyelembe venni a három fő funkció minél biztosabb tesztelése érdekében.</p>
 
 ### Telepítési terv
 <p align="justify">Elképzeléseink alapján az elkészült program nem fog telepítést igényelni, csupán Windows 10 64 bites operációs rendszerre és Java SE Development Kit 11-re lesz szükség a számítógépeken. Az egyszerűség kedvéért a programot egy futtatható JAR fájl segítségével lehet majd elindítani, további beállítást nem fog igényelni. A szükséges környezet megteremtésében rendelkezésre állunk szaktudásunkkal a könyvtár számára.</p>
