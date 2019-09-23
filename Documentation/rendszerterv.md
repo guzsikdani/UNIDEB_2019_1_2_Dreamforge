@@ -26,7 +26,7 @@
 <p align="justify">Ahogy az már korábban említésre került, a csapat a Scrum módszertant követi, annak minden szabályának betartásával együtt. Ennek fényében szükséges további szerepkörök definiálása, ami az alábbiak szerint alakul:</p>
 
 * Nagy Márta: Scrum Master
-    <p align="justify">A szerepkör lényege, hogy biztosítsa a fejlesztőcsapatban a Scrum elvek betartását. Ő felelős azért, hogy a Scrum Meetingek megfelelően legyenek lebonyolítva, illetve hogy annak szabályai is teljesülnek. Feladata egy olyan környezet megteremtése, amelyben a csapat effektíven dolgozhat. Ha a csapat valamilyen akadályba ütközik, akkor a Scrum Master feladata, hogy elhárítsa azt. Fontos azonban látni, hogy a Scrum Master nem tekinthető projektvezetőnek, mivel a csapatnak önszerveződő.</p>
+    <p align="justify">A szerepkör lényege, hogy biztosítsa a fejlesztőcsapatban a Scrum elvek betartását. Ő felelős azért, hogy a Scrum Meetingek megfelelően legyenek lebonyolítva, illetve hogy annak szabályai is teljesülnek. Feladata egy olyan környezet megteremtése, amelyben a csapat effektíven dolgozhat. Ha a csapat valamilyen akadályba ütközik, akkor a Scrum Master feladata, hogy elhárítsa azt. Fontos azonban látni, hogy a Scrum Master nem tekinthető projektvezetőnek, mivel a csapat önszerveződő.</p>
 * Kovács Nikolett: Product Owner
     <p align="justify">A szerepkör felelősségteljes pozíció abban az ügyben, hogy a fejlesztőcsapat által elkészített termék a legmagasabb minőséget képviselje. Ő a felelős a kapcsolattartásért, amely során közvetítő szerepet tölt be a két fél között - jelen esetben a Könyvtár és a fejlesztőcsapat vonatkozásában. Egyeztet a Könyvtárral, hogy az elképzeléseiket megfelelően továbbítani tudja a fejlesztőcsapat felé, ezáltal meghatározva a csapat feladatainak prioritásait is. Biztosítja, hogy a csapat számára a Product Backlog érthető, és tiszta legyen, hogy világosan láthassa a csapat, hogy min szükséges dolgozniuk. Jelentős szerepet tölt be annak érdekében, hogy a program az igényeknek legmegfelelőbb legyen. Ehhez szükséges a magas fokú empátiakészség, a türelem és a jó kommunikációs képesség megléte.</p>
 
@@ -115,7 +115,7 @@ Elképzeléseink szerint az adatbázis három táblát fog tartalmazni, amelyek 
     * Telefonszám
     * Lakcím
     * Email cím
-* Borrowing  
+* Borrowing 
     Ez a tábla tartalmazza a kölcsönzéseket, illetve azok adatait:
     * Egyedi azonosító (kölcsönzési azonosító)
     * A kölcsönzéshez tartozó könyv egyedi azonosítója
