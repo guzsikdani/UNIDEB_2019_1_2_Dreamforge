@@ -7,7 +7,7 @@
             <property name="javax.persistence.jdbc.user" value="aclP87wsp2" />
             <property name="javax.persistence.jdbc.password" value="uNrSLJ692V" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
     </persistence-unit>
 </persistence>
