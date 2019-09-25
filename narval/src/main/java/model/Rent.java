@@ -30,9 +30,4 @@ public class Rent {
 
     @Column(nullable = false)
     private Date deadline;
-
-    public void returnBookById(String bookId, String userId)
-    {
-        //TODO
-    }
 }
