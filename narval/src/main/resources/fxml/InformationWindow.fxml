@@ -5,11 +5,10 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.Pane?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ComboBox layoutX="40.0" layoutY="35.0" prefWidth="150.0" />
-      <TextArea layoutX="40.0" layoutY="60.0" prefHeight="273.0" prefWidth="510.0" />
-      <Button layoutX="501.0" layoutY="346.0" mnemonicParsing="false" text="Button" />
+      <ComboBox fx:id="rentDropdown" layoutX="40.0" layoutY="35.0" prefWidth="150.0" />
+      <TextArea fx:id="rentFeedback" layoutX="40.0" layoutY="60.0" prefHeight="273.0" prefWidth="510.0" />
+      <Button fx:id="closeRentButton" layoutX="501.0" layoutY="346.0" mnemonicParsing="false" text="Button" />
    </children>
 </Pane>
