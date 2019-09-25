@@ -1,7 +1,7 @@
 package util.Generator;
 
 import com.github.javafaker.Faker;
-import com.google.inject.internal.cglib.proxy.$Factory;
+import model.Book;
 
 public class BookGenerator
 {
