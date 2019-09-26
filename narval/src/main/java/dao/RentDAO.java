@@ -35,4 +35,10 @@ public class RentDAO extends GenericJpaDao {
         List<String> result = query.getResultList();
         return !result.isEmpty() ? result : null;
     }
+
+    public Rent getRentById(String rentId) {
+        TypedQuery<Rent> query = entityManager.createQuery("select r from Rent r where r.id = " + rentId, Rent.class);
+        Rent result = query.getResultList().get(0);
+        return result;
+    }
 }
