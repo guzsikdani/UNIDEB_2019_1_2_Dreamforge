@@ -27,4 +27,12 @@ public class RentDAO extends GenericJpaDao {
             rent.setEndDate(currentDate);
         }
     }
+
+    public List<String> getRentsWithoutEndDate() {
+        TypedQuery<String> query = entityManager.createQuery("select r.id || ' : ' || b.title || ' : ' || u.name " +
+                "|| ' : ' || r.deadline from Rent r, User u, Book b where r.bookId = b.id and r.userId = u.id and r.endDate is null",
+                String.class);
+        List<String> result = query.getResultList();
+        return !result.isEmpty() ? result : null;
+    }
 }
