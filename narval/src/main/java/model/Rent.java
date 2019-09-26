@@ -14,7 +14,8 @@ import java.util.Date;
 public class Rent {
 
     @Id
-    private String id;
+    @GeneratedValue
+    private int id;
 
     @Column(nullable = false)
     private String bookId;
