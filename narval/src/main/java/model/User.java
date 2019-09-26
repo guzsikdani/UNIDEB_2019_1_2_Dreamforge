@@ -14,6 +14,7 @@ import java.util.Date;
 public class User {
 
     @Id
+    @Column(nullable = false)
     private String id;
 
     @Column(nullable = false)

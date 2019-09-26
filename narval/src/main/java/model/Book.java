@@ -21,6 +21,7 @@ public class Book
      * The Cut-code of the book.
      */
     @Id
+    @Column(nullable = false)
     private String id;
 
     /**
