@@ -1,17 +1,27 @@
 package util.Generator;
 
 import com.github.javafaker.Faker;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+import dao.BookDAO;
 import model.Book;
+import util.guice.PersistenceModule;
+
 
 public class BookGenerator
 {
-    public BookGenerator(){}
+    private BookDAO bookDAO;
+    public BookGenerator()
+    {
+        Injector injector = Guice.createInjector(new PersistenceModule("jpa-persistence-unit-1"));
+        bookDAO = injector.getInstance(BookDAO.class);
+    }
 
     /**
      * Creates a random book;
      * @return
      */
-    public Book generateBook()
+    public void generateBookTable()
     {
         Faker faker = new Faker();
         com.github.javafaker.Book book = faker.book();
@@ -22,12 +32,15 @@ public class BookGenerator
                 .available(true)
                 .build();
 
-        return temp;
-    }
-    /**
-    private Book[] generateBooks(int count)
-    {
+        bookDAO.persist(temp);
 
     }
-     **/
+
+    public void generateBooks(int count)
+    {
+        for(int i=0;i<count;i++)
+        {
+            generateBookTable();
+        }
+    }
 }
