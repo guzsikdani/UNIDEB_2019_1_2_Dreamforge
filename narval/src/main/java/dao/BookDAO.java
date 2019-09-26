@@ -1,5 +1,6 @@
 package dao;
 
+import com.google.inject.persist.Transactional;
 import model.Book;
 import util.SearchBy;
 import util.jpa.GenericJpaDao;
@@ -29,5 +30,17 @@ public class BookDAO extends GenericJpaDao {
             return !result.isEmpty() ? result : null;
         } else
             return null;
+    }
+
+    @Transactional
+    public void updateAvailabilityToFalse(String bookId) {
+        Book book = bookRead(SearchBy.ID, bookId).get(0);
+        book.setAvailable(false);
+    }
+
+    @Transactional
+    public void updateAvailabilityToTrue(String bookId) {
+        Book book = bookRead(SearchBy.ID, bookId).get(0);
+        book.setAvailable(true);
     }
 }
