@@ -37,16 +37,22 @@ public class MainWindowController implements Initializable
     @FXML
     private Button rentButton;
 
+    @FXML
+    private Button informationButton;
+
     private BookDAO bookDAO;
 
-    private Boolean show = false;
+    private Boolean showrent = false;
+    private Boolean showinformation = false;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         fillDropDown();
         rentButton.setText("Kölcsönzés");
+        informationButton.setText("Információk és visszavitel");
         openRent();
+        openInformation();
     }
 
     private void fillDropDown()
@@ -63,16 +69,43 @@ public class MainWindowController implements Initializable
             public void handle(ActionEvent actionEvent) {
                 Parent parent;
                 try {
-                    if (show == false) {
+                    if (showrent == false) {
                         parent = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/RentWindow.fxml"));
                         Stage stage = new Stage();
                         stage.setScene(new Scene(parent));
                         stage.show();
-                        show = true;
+                        showrent = true;
                         stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                             @Override
                             public void handle(WindowEvent windowEvent) {
-                                show = false;
+                                showrent = false;
+                            }
+                        });
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    private void openInformation()
+    {
+        informationButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                Parent parent;
+                try {
+                    if (showinformation == false) {
+                        parent = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/InformationWindow.fxml"));
+                        Stage stage = new Stage();
+                        stage.setScene(new Scene(parent));
+                        stage.show();
+                        showinformation = true;
+                        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                            @Override
+                            public void handle(WindowEvent windowEvent) {
+                                showinformation = false;
                             }
                         });
                     }
