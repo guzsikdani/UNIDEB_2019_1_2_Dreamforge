@@ -16,7 +16,7 @@
 <p align="justify">Úgy hisszük, hogy a code review is nagyban hozzájárul ahhoz, hogy a program a megfelelő minőségben kerüljön a felhasználók elé, emiatt tervezzük rendszeresen átnézni és véleményezni az általunk írt programsorokat.</p>
 
 ### Projektszerepkörök és felelősségeik
-<p align="justify">A cég 4 fős csapata fog dolgozni a projekten. A kis létszámból adódóan nincsenek hagyományos értelemben vett szerepkörök definiálva, mindenki igyekszik a legtöbb munkálatba belefolyni. Azonban vannak olyan területek, amihez egy bizonyos személy jobban ért, mint a többiek, ezért úgy éreztük, hogy fontos az, hogy bizonyos részterületekhez kinevezzünk egy-egy felelőst, akihez a felmerülő problémák esetén lehet fordulni. A felelősök megnevezése, az általuk reprezentált speciális területtel:</p>
+<p align="justify">A cég 4 fős csapata dolgozik a projekten. A kis létszámból adódóan nincsenek hagyományos értelemben vett szerepkörök definiálva, mindenki igyekszik a legtöbb munkálatba belefolyni. Azonban vannak olyan területek, amihez egy bizonyos személy jobban ért, mint a többiek, ezért úgy éreztük, hogy fontos az, hogy bizonyos részterületekhez kinevezzünk egy-egy felelőst, akihez a felmerülő problémák esetén lehet fordulni. A felelősök megnevezése, az általuk reprezentált speciális területtel:</p>
 
 * Kovács Nikolett: kinézet, felhasználói felület
 * Kövér Krisztián: adatok kezelése
@@ -66,18 +66,18 @@ Mivel a teljes projektre 2 hét áll rendelkezésünkre, így ezt 1 sprinten bel
 <p align="justify">Az elkészült program a Pajkaréti Közösségi Könyvtár számítógépein fog futni, amelyek jelen állapotukban nem alkalmasak arra, hogy a Windows 10 64 bites operációs rendszert futtassák, viszont a CsodaKönyvtár 1.14.4 országos pályázat keretein belül tervezik ezen számítógépek komponenseinek lecserélését, ezáltal az operációs rendszer és a program futtatása már nem fog gondot okozni. Azért ezt az operációs rendszert választottuk, mivel az erre a platformra történő fejlesztésben van a csapatunknak tapasztalata, illetve fontos szempont volt az is, hogy a választott operációs rendszer hosszú távon támogatott legyen. A CsodaKönyvtár 1.14.4 országos pályázat várhatóan biztosítani fogja az operációs rendszer licenszek megvásárlásához szükséges pénzügyi keretet is. Ha a Könyvtár igényli, akkor biztosítani tudunk számukra szakembereket, akik segíteni tudnak az operációs rendszer megfelelő feltelepítésében.</p>
 
 #### Programozási nyelv - Java
-<p align="justify">A programot Java programozási nyelven tervezzük megírni, azon belül is a Java SE Development Kit 11-et használva. Cégünk leginkább Java nyelven írt alkalmazások fejlesztésében tapasztalt, emiatt esett a választás erre a programozási nyelvre. A céges környezetünkben leginkább a Java SE Development Kit 8 van elterjedten használva, viszont a hosszabb támogatottsági idő reményében ezen projekt során a 11-es verziót fogjuk használni.</p>
+<p align="justify">A programot Java programozási nyelven írjuk, azon belül is a Java SE Development Kit 11-et használva. Cégünk leginkább Java nyelven írt alkalmazások fejlesztésében tapasztalt, emiatt esett a választás erre a programozási nyelvre. A céges környezetünkben leginkább a Java SE Development Kit 8 van elterjedten használva, viszont a hosszabb támogatottsági idő reményében ezen projekt során a 11-es verziót használjuk.</p>
 
 <p align="justify">A számítógépekre várhatóan telepítve lesz a Java SE Development Kit 11, ami a használt programozási nyelvből adódóan szintén szükséges az elkészült program futtatásához.</p>
 
 #### Felhasználói felület - JavaFX
-<p align="justify">A felhasználói felület kialakításához JavaFX technológiát tervezünk használni, CSS stíluslapokkal javítva annak megjelenésén. A választásunk azért esett erre a technológiára, mivel a csapatunkon belül ezt a technológiát ismerjük a legjobban. Manapság ez a technológia már nem annyira népszerű, viszont mi mégis bízunk abban, hogy megfelelő felhasználói felületet fog tudni biztosítani a fejlesztendő programunk számára.</p>
+<p align="justify">A felhasználói felület kialakításához JavaFX technológiát használjuk, CSS stíluslapokkal javítva annak megjelenésén. A választásunk azért esett erre a technológiára, mivel a csapatunkon belül ezt a technológiát ismerjük a legjobban. Manapság ez a technológia már nem annyira népszerű, viszont mi mégis bízunk abban, hogy megfelelő felhasználói felületet fog tudni biztosítani a fejlesztendő programunk számára.</p>
 
 #### Build automatizálási tool - Apache Maven
 <p align="justify">A szoftverprojekt menedzselésére és a buildelés automatizálására az Apache Maven nevű eszközt használjuk. Azért ezt az eszközt választottuk, mivel kompatibilis a Java programozási nyelvvel, és a felmerülő alternatívák vagy túl elavultnak számítanak manapság (pl. Apache Ant), vagy pedig nem ismerjük őket annyira, hogy megfelelő magabiztossággal tudjuk alkalmazni (pl. Gradle). A kezeléséhez szükséges bizonyos szintű XML tudás, viszont azt a fejlesztőcsapaton belül mindannyian magabiztosan ismerjük és alkalmazzuk, így ez nem fog gondot okozni.</p>
 
 #### Perzisztens adatkezelés - JPA, Hibernate, RemoteMySQL
-<p align="justify">A perzisztens adatkezelés megvalósítására a Java Persistence API-t tervezzük használni. Ezen belül a Hibernate objektum-relációs leképezés eszközzel szándékozunk dolgozni a JPA implementációk közül. A csapat korábbi tapasztalatai alapján felmerült még további lehetőségként a JAXB, tehát az XML alapú perzisztens adatkezelés, illetve a Gson is, ami pedig JSON alapú. Viszont ezek a CRUD, azaz a Create, Read, Update és Delete műveletek közül az Update-et nem támogatják, a program megvalósításakor viszont várhatóan szükségünk lesz rá, emiatt le kellett mondanunk a használatukról. A JPA-t a Google Guice nevű függőség befecskendezési keretrendszer segítségével tervezzük használni.</p>
+<p align="justify">A perzisztens adatkezelés megvalósítására a Java Persistence API-t használjuk. Ezen belül a Hibernate objektum-relációs leképezés eszközzel szándékozunk dolgozni a JPA implementációk közül. A csapat korábbi tapasztalatai alapján felmerült még további lehetőségként a JAXB, tehát az XML alapú perzisztens adatkezelés, illetve a Gson is, ami pedig JSON alapú. Viszont ezek a CRUD, azaz a Create, Read, Update és Delete műveletek közül az Update-et nem támogatják, a program megvalósításakor viszont várhatóan szükségünk lesz rá, emiatt le kellett mondanunk a használatukról. A JPA-t a Google Guice nevű függőség befecskendezési keretrendszer segítségével tervezzük használni.</p>
 
 <p align="justify">A JPA használatához szükséges egy SQL hoszt is, ami a magát az adatbázist tárolja. A Narvál 1.0 elnevezésű próbaprogram esetén úgy gondoljuk, egyelőre megfelelő lesz egy ingyenes szolgáltatás is. Ehhez a <a href="https://remotemysql.com/">Remote MySQL</a>-t tervezzük használni, ami korábbi kisebb projektjeink során megfelelőnek, illetve megbízhatónak bizonyult.</p>
 
@@ -85,13 +85,13 @@ Mivel a teljes projektre 2 hét áll rendelkezésünkre, így ezt 1 sprinten bel
 <p align="justify">Korábbi pozitív tapasztalataink alapján mindenképpen szeretnénk használni a <a href="https://projectlombok.org/">Project Lombok</a> nevű Java könyvtár által nyújtotta lehetőségeket, mivel rengeteg hasznos funkcióval könnyíti meg a fejlesztők életét. A könyvtár főként annotációkat definiál, amelyekkel egyszerűen és átláthatóan generálhatóak konstruktorok, getterek, setterek, illetve tartalmaz annotációt a Builder tervezési minta alkalmazásához is.</p>
 
 #### Logolás - Log4J
-<p align="justify">A hibakeresésben fontos szerepet játszik a logolás, úgy gondoljuk, hogy a hasznos log üzenetek jelentősen megkönnyíthetik a fejlesztők életét. Emiatt tervezzük valamelyik lightweight logolási keretrendszer használatát is. Többféle ilyennel is van már korábbi tapasztalatunk, pl. SLF4J, TinyLog, Java.util.logging, Logback, Log4j. A fejlesztőcsapat ezen projekt során várhatóan az <a href="https://www.slf4j.org/">SLF4J</a>-t felhasználva fogja kezelni a logolást. A logolásra nem tervezünk konkrét log fájl létrehozását, illetve abba való kiíratást, hanem csak egyszerűen a standard outputra fogunk hagyatkozni.</p>
+<p align="justify">A hibakeresésben fontos szerepet játszik a logolás, úgy gondoljuk, hogy a hasznos log üzenetek jelentősen megkönnyíthetik a fejlesztők életét. Emiatt tervezzük valamelyik lightweight logolási keretrendszer használatát is. Többféle ilyennel is van már korábbi tapasztalatunk, pl. SLF4J, TinyLog, Java.util.logging, Logback, Log4j. A fejlesztőcsapat ezen projekt során várhatóan az <a href="https://www.slf4j.org/">SLF4J</a>-t felhasználva fogja kezelni a logolást. A logolásra nem tervezünk konkrét log fájl létrehozását, illetve abba való kiíratást, hanem csak egyszerűen a standard outputra hagyatkozunk.</p>
 
 #### Futtatható JAR - Maven Shade Plugin
 <p align="justify">Az egyszerű futtatás érdekében az elkészült programhoz szeretnénk az Apache Maven Shade Plugin segítségével egy futtatható JAR fájlt is létrehozni.</p>
 
 ### Architekturális terv
-<p align="justify">Szoftverarchitektúrák tekintetében a Model-View-Controller, azaz az MVC szerkezeti mintát tervezzük követni. Ez alapján a szoftvert 3 szerkezeti részre lehet felosztani:</p>
+<p align="justify">Szoftverarchitektúrák tekintetében a Model-View-Controller, azaz az MVC szerkezeti mintát követjük. Ez alapján a szoftvert 3 szerkezeti részre lehet felosztani:</p>
 
 1. Modell (Model)  
     * Az alkalmazás által kezelt adatokat, illetve az üzleti logikát tartalmazza, független a megjelenítéstől
@@ -103,12 +103,16 @@ Mivel a teljes projektre 2 hét áll rendelkezésünkre, így ezt 1 sprinten bel
     * Kezeli a felhasználótól származó bemenetet és ez alapján a modell vagy a nézet felé szolgáltatáskéréseket tesz
     * Ezt a réteget reprezentálják a Controller osztályok
 
-<p align="justify">Az átláthatóság érdekében a projekt könyvtárszerkezetét is ehhez igazodva tervezzük létrehozni.</p>
+<p align="justify">Az átláthatóság érdekében a projekt könyvtárszerkezetét is ehhez igazodva hozzuk létre.</p>
 
-<p align="justify">A perzisztens adatokhoz való hozzáférést adatelérési objektumok, azaz DAO-k fogják biztosítani.</p>
+<p align="justify">A perzisztens adatokhoz való hozzáférést adatelérési objektumok, azaz DAO-k biztosítják.</p>
 
 ### Adatbázis terv
-Elképzeléseink szerint az adatbázis három táblát fog tartalmazni, amelyek a következők:
+Az adatbázis tervhez az alábbi modellt készítettük el:
+
+![](dataModel.png)
+
+Elképzeléseink szerint az adatbázis három táblát tartalmaz, amelyek a következők:
 * Book  
     Ez a tábla tartalmazza a könyvállomány könyveit, illetve azok adatait:
     * Egyedi azonosító (Cutter-szám)
@@ -123,7 +127,7 @@ Elképzeléseink szerint az adatbázis három táblát fog tartalmazni, amelyek 
     * Telefonszám
     * Lakcím
     * Email cím
-* Borrowing 
+* Rent 
     Ez a tábla tartalmazza a kölcsönzéseket, illetve azok adatait:
     * Egyedi azonosító (kölcsönzési azonosító)
     * A kölcsönzéshez tartozó könyv egyedi azonosítója
@@ -132,12 +136,12 @@ Elképzeléseink szerint az adatbázis három táblát fog tartalmazni, amelyek 
     * A kölcsönzés vége (ha nincs értéke, akkor az adott könyv még nem került visszaszolgáltatásra a kölcsönző által)
     * A kölcsönzés határideje (az az idő, amikor legkésőbb vissza kell vinnie az olvasónak a kikölcsönzött könyvet)
     
-A Book és a Borrowing táblák között 1:1 kapcsolat áll fenn, a User és a Borrowing között pedig 1:N, mivel:
+A Book és a Rent táblák között 1:1 kapcsolat áll fenn, a User és a Rent között pedig 1:N, mivel:
 * Egy könyvhöz csak egy kölcsönzés tartozhat, és egy kölcsönzéshez is egy könyv tartozhat (mivel a könyvek egyedi azonosító szerint vannak tárolva).
 * Egy olvasóhoz tartozhat több kölcsönzés is, viszont egy kölcsönzés csak egy olvasóhoz tartozhat.
 
 ### Implementációs terv
-<p align="justify">Az adatbázis tervben említett adatbázis táblák mindegyikéhez tartozik egy-egy POJO, azaz Plain Old Java Object, ezek kezdetleges tervét a lenti UML diagram szemlélteti. Ezek lesznek a JPA entitások.</p>
+<p align="justify">Az adatbázis tervben említett adatbázis táblák mindegyikéhez tartozik egy-egy POJO, azaz Plain Old Java Object, ezek kezdetleges tervét a lenti UML diagram szemlélteti - ezek a JPA entitások.</p>
 
 ![](uml.png)
 
@@ -145,7 +149,7 @@ A Book és a Borrowing táblák között 1:1 kapcsolat áll fenn, a User és a B
 <p align="justify">A határidő közelsége miatt, illetve a viszonylag kevés funkcionalitásból adódóan csupán manuális tesztet tervezünk végrehajtani a programon. Ezt egy megfelelő tesztelési dokumentációban tervezzük dokumentálni. Igyekszünk a lehető legtöbb szempontot figyelembe venni a három fő funkció minél biztosabb tesztelése érdekében.</p>
 
 ### Telepítési terv
-<p align="justify">Elképzeléseink alapján az elkészült program nem fog telepítést igényelni, csupán Windows 10 64 bites operációs rendszerre és Java SE Development Kit 11-re lesz szükség a számítógépeken. Az egyszerűség kedvéért a programot egy futtatható JAR fájl segítségével lehet majd elindítani, további beállítást nem fog igényelni. A szükséges környezet megteremtésében rendelkezésre állunk szaktudásunkkal a könyvtár számára.</p>
+<p align="justify">Elképzeléseink alapján az elkészült program nem igényel telepítést, csupán Windows 10 64 bites operációs rendszerre és Java SE Development Kit 11-re van szükség a számítógépeken. Az egyszerűség kedvéért a programot egy futtatható JAR fájl segítségével lehet elindítani, további beállítást nem igényel. A szükséges környezet megteremtésében rendelkezésre állunk szaktudásunkkal a könyvtár számára.</p>
 
 ### Karbantartási terv
 <p align="justify">Felmerülő problémák esetén a Pajkaréti Közösségi Könyvtár bármikor fordulhat hozzánk a kérdéseikkel, továbbá tervezünk írni számukra egy technikai dokumentációt is, ami tulajdonképpen egy használati utasításként szolgál, hogy minél egyszerűbben megtanulhassák a program kezelését, ezáltal próbálva lecsökkenteni az esetleges felhasználói általi hibalehetőségeket.</p>
