@@ -88,9 +88,6 @@ public class InformationWindowController implements Initializable {
 
             bookDAO.updateAvailabilityToTrue(selectedRent.getBookId());
 
-            Date currentDate = new Date(System.currentTimeMillis());
-
-            selectedRent.setEndDate(currentDate);
             rentDAO.updateRent(selectedRent);
 
             closeRentButton.setDisable(true);
