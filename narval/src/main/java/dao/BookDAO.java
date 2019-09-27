@@ -14,18 +14,18 @@ public class BookDAO extends GenericJpaDao {
     public List<Book> bookRead(SearchBy sb , String searchTerm) {
 
         if (sb.equals(SearchBy.ID)) {
-            TypedQuery<Book> query = entityManager.createQuery("select b from Book b where id = ?1", Book.class)
-                    .setParameter(1, searchTerm);
+            TypedQuery<Book> query = entityManager.createQuery("select b from Book b where id like ?1", Book.class)
+                    .setParameter(1, '%' + searchTerm + '%');
             List<Book> result = query.getResultList();
             return !result.isEmpty() ? result : null;
         } else if (sb.equals(SearchBy.TITLE)) {
-            TypedQuery<Book> query = entityManager.createQuery("select b from Book b where title = ?1", Book.class)
-                    .setParameter(1, searchTerm);
+            TypedQuery<Book> query = entityManager.createQuery("select b from Book b where title like ?1", Book.class)
+                    .setParameter(1, '%' + searchTerm + '%');
             List<Book> result = query.getResultList();
             return !result.isEmpty() ? result : null;
         } else if (sb.equals(SearchBy.AUTHOR)) {
-            TypedQuery<Book> query = entityManager.createQuery("select b from Book b where author = ?1", Book.class)
-                    .setParameter(1, searchTerm);
+            TypedQuery<Book> query = entityManager.createQuery("select b from Book b where author like ?1", Book.class)
+                    .setParameter(1, '%' + searchTerm + '%');
             List<Book> result = query.getResultList();
             return !result.isEmpty() ? result : null;
         } else
