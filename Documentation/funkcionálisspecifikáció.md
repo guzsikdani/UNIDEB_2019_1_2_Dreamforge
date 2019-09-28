@@ -49,7 +49,15 @@ A könyvtár azzal a kéréssel fordult felénk, hogy modernizáljuk a katalógu
 <p align="justify">A cégünk saját grafikai részleggel rendelkezik, ezért fontosnak tartjuk a tervezési fázisban az általunk tervezett grafikus megoldások használatát. A Narvál 1.0 rendszer saját fejlesztésünk, amely egy projektsorozat első próbaprogramja és amelyet a Könyvtár számára rendelkezésre bocsátunk az elkészítését követően saját logóval, saját színes felülettel.</p>
 
 ### Jelenlegi üzleti folyamatok modellje
-<p align="justify">A Pajkaréti Közösségi Könyvtár által nyújtott követelményspecifikációban leírtak szerint.</p>
+<p align="justify">A Pajkaréti Közösségi Könyvtár által nyújtott követelményspecifikációban leírtak szerint, amely az alábbiakat tartalmazza:</p>
+
+* <p align="justify">A jelenlegi állapotában minden munka papír alapú (nyilvántartási és leltározási), nincs számítógépes rendszerük.</p>
+* <p align="justify">Új olvasó beiratkozása esetén egy papír alapú rendszerbe kerülnek az adatai, a nyilvántartásba, ahol kap olvasójegyet, azzal együtt egy számot és ez szolgál az egyedi azonosításra.</p> 
+* <p align="justify">Rögzítésre kerül továbbá a név, születési dátum, olvasójegyszám, telefonszám, lakcím, e-mail cím.</p>
+* <p align="justify">Ha egy, már beiratkozott tag adatai módosulnak, az olvasójegyen és a nyilvántartásban is átírja ezeket.</p>
+* <p align="justify">A kölcsönzés ténye és dokumentumai, fontos információi (mikor, mit, mennyi időre) az olvasójegyre kerül felvezetésre, amely adatok szerepelnek a nyilvántartásban is és a kölcsönzés egy külön papíron is feljegyzésre kerül minden olvasó esetén. A könyvek szerinti nyilvántartásban is rögzítésre kerül a kölcsönzés ténye: mikor kölcsönözték, melyik olvasójegyszámmal.</p>
+* <p align="justify">A visszavitel folyamata szintén rögzítésre kerül az olvasójegyen és a nyilvántartásban: mikor történt, melyik könyvet hozta vissza az olvasó. A könyvek szerinti nyilvántartásba feljegyzésre kerül a visszavitel dátuma.</p>
+* <p align="justify">Minden könyv rendelkezik egyedi azonosítóval.</p>
 
 ### Tervezett üzleti folyamatok modellje
 <p align="justify">Igyekszünk a Pajkaréti Közösségi Könyvtár által nyújtott követelményspecifikációban leírtaknak minden pontban megfelelő rendszert létrehozni, viszont az új olvasók hozzáadását a próbaprogram fejlesztése során nem tudjuk biztosítani.</p>
