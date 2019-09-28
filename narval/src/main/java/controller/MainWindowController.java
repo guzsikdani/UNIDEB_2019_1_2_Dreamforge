@@ -98,12 +98,7 @@ public class MainWindowController implements Initializable
                         stage.setScene(new Scene(parent));
                         stage.show();
                         showRent = true;
-                        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
-                            @Override
-                            public void handle(WindowEvent windowEvent) {
-                                showRent = false;
-                            }
-                        });
+                        stage.setOnCloseRequest(windowEvent -> showRent = false);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -151,8 +146,12 @@ public class MainWindowController implements Initializable
             } else if (searchTerm.equals("Kód")) {
                 resultList = bookDAO.bookRead(SearchBy.ID, searchField.getText());
             }
-            ObservableList<Book> result = FXCollections.observableArrayList(resultList);
-            resultTable.setItems(result);
+            if (resultList != null) {
+                ObservableList<Book> result = FXCollections.observableArrayList(resultList);
+                resultTable.setItems(result);
+            } else {
+                resultTable.getItems().clear();
+            }
         }
     }
 }
