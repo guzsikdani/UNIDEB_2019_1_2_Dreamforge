@@ -90,13 +90,13 @@ public class RentWindowController implements Initializable {
         } else if (bookIdField.getText() == null) {
             feedback.setText("Add meg a kikölcsönzendő könyv sorszámát!");
             return false;
-        } else if (!bookDAO.bookRead(util.SearchBy.ID, bookIdField.getText()).get(0).getAvailable()) {
+        } else if (bookDAO.bookRead(util.SearchBy.ID, bookIdField.getText()) != null && !bookDAO.bookRead(util.SearchBy.ID, bookIdField.getText()).get(0).getAvailable()) {
             feedback.setText("A kiválasztott könyv nem elérhető!");
             return false;
         } else if (castDeadlineToDate(deadlineDate.getValue()).before(currentDate)) {
             feedback.setText("Adj meg egy érvényes lejárati időt!");
             return false;
-        } else if (bookDAO.bookRead(util.SearchBy.ID, bookIdField.getText()).get(0) == null) {
+        } else if (bookDAO.bookRead(util.SearchBy.ID, bookIdField.getText()) == null) {
             feedback.setText("Adj meg egy megfelelő könyv sorszámot!");
             return false;
         } else {
