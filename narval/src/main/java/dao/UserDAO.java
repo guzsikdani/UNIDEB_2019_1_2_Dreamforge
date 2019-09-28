@@ -17,7 +17,7 @@ public class UserDAO extends GenericJpaDao {
     }
 
     public User getUserById(String userId) {
-        TypedQuery<User> query = entityManager.createQuery("select u from User u where u.id = " + userId, User.class);
+        TypedQuery<User> query = entityManager.createQuery("select u from User u where u.id = '" + userId + "'", User.class);
         User result = query.getResultList().get(0);
         return result;
     }
