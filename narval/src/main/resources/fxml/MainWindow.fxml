@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
+<?import javafx.scene.control.Label?>
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="839.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
     <children>
         <HBox layoutX="49.0" layoutY="30.0" prefHeight="28.0" prefWidth="742.0">
@@ -20,6 +21,9 @@
             </children>
         </HBox>
         <TableView fx:id="resultTable" layoutX="49.0" layoutY="65.0" prefHeight="432.0" prefWidth="742.0" style="-fx-background-color: AliceBlue; -fx-border-color: Blue;">
+            <placeholder>
+                <Label text="Nincs elérhető adat"/>
+            </placeholder>
             <columns>
                 <TableColumn fx:id="bookId" prefWidth="101.0" style="-fx-background-color: Lavender;" text="Cutter-szám" />
                 <TableColumn fx:id="bookTitle" minWidth="0.0" prefWidth="342.0" style="-fx-background-color: Lavender;" text="Cím" />
