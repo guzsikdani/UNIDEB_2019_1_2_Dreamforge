@@ -4,6 +4,6 @@ public class RandomBookGenerator
 {
     public static void main(String[] args) {
         BookGenerator bookGenerator =new BookGenerator();
-        bookGenerator.generateBooks(1);
+        bookGenerator.generateBooks(1000);
     }
 }
