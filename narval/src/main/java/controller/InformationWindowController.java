@@ -15,10 +15,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import javafx.util.Duration;
 import model.Book;
 import model.Rent;
 import model.User;
+import org.jboss.jandex.Main;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.SearchBy;
@@ -35,6 +37,8 @@ public class InformationWindowController implements Initializable {
     private BookDAO bookDAO;
     private RentDAO rentDAO;
     private UserDAO userDAO;
+
+    private MainWindowController mainWindowController;
 
     @FXML
     private ComboBox rentDropdown;
@@ -95,7 +99,7 @@ public class InformationWindowController implements Initializable {
             Stage stage = (Stage) closeRentButton.getScene().getWindow();
 
             PauseTransition delay = new PauseTransition(Duration.seconds(1));
-            delay.setOnFinished(event -> stage.close());
+            delay.setOnFinished(event -> stage.fireEvent(new WindowEvent(stage, WindowEvent.WINDOW_CLOSE_REQUEST)));
             delay.play();
         }
     }

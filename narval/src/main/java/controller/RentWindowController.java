@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import javafx.util.Duration;
 import model.Rent;
 import org.slf4j.Logger;
@@ -133,7 +134,7 @@ public class RentWindowController implements Initializable {
             Stage stage = (Stage) rentButton.getScene().getWindow();
 
             PauseTransition delay = new PauseTransition(Duration.seconds(1));
-            delay.setOnFinished(event -> stage.close());
+            delay.setOnFinished(event -> stage.fireEvent(new WindowEvent(stage, WindowEvent.WINDOW_CLOSE_REQUEST)));
             delay.play();
         }
     }
