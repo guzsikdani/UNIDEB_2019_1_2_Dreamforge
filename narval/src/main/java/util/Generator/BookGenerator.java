@@ -27,7 +27,7 @@ public class BookGenerator
         com.github.javafaker.Book book = faker.book();
         Book temp = Book.builder()
                 .id(Faker.instance().idNumber().valid())
-                .title(book.author())
+                .title(book.title())
                 .author(book.author())
                 .available(true)
                 .build();
