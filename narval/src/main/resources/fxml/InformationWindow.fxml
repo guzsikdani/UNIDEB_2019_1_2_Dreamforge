@@ -3,12 +3,22 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InformationWindowController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="839.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InformationWindowController">
    <children>
-      <ComboBox fx:id="rentDropdown" layoutX="40.0" layoutY="35.0" onAction="#onSelectedRent" prefWidth="150.0" />
-      <TextArea fx:id="rentFeedback" layoutX="40.0" layoutY="60.0" prefHeight="273.0" prefWidth="510.0" />
-      <Button fx:id="closeRentButton" layoutX="501.0" layoutY="346.0" mnemonicParsing="false" onAction="#closeRent" text="Button" />
+      <ComboBox fx:id="rentDropdown" layoutX="250.0" layoutY="100.0" onAction="#onSelectedRent" prefHeight="25.0" prefWidth="510.0" style="-fx-background-color: Lavender;" />
+      <TextArea fx:id="rentFeedback" layoutX="250.0" layoutY="160.0" prefHeight="273.0" prefWidth="510.0" style="-fx-border-color: Blue;" />
+      <Button fx:id="closeRentButton" layoutX="644.0" layoutY="463.0" mnemonicParsing="false" onAction="#closeRent" prefHeight="69.0" prefWidth="116.0" style="-fx-background-color: Lavender;" text="Lezár" />
+      <ImageView layoutX="333.0" layoutY="497.0">
+         <image>
+            <Image url="@../narvalkicsi.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="76.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kölcsönzés kiválasztása:" />
+      <Text fill="#f8f8f8" layoutX="76.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kölcsönzési adatok:" />
    </children>
 </Pane>
