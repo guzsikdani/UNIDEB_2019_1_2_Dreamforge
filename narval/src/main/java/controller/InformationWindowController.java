@@ -27,6 +27,7 @@ import util.SearchBy;
 import util.guice.PersistenceModule;
 
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -114,9 +115,11 @@ public class InformationWindowController implements Initializable {
         User associatedUser = userDAO.getUserById(selectedRent.getUserId());
         Book associatedBook = bookDAO.bookRead(SearchBy.ID, selectedRent.getBookId()).get(0);
 
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm");
+
         rentFeedback.setText("Kölcsönzés sorszáma: " + selectedRent.getId() + "\n" +
-                "Kölcsönzés dátuma: " + selectedRent.getStartDate() + "\n" +
-                "Kölcsönzés határideje: " + selectedRent.getDeadline() + "\n" +
+                "Kölcsönzés dátuma: " + simpleDateFormat.format(selectedRent.getStartDate()) + "\n" +
+                "Kölcsönzés határideje: " + simpleDateFormat.format(selectedRent.getDeadline()) + "\n" +
                 "Olvasó: " + associatedUser.getName() + "\n" +
                 "Olvasó olvasójegyszáma: " + associatedUser.getId() + "\n" +
                 "Kölcsönzött könyv: " + associatedBook.getAuthor() + " - " + associatedBook.getTitle() + "\n" +
