@@ -80,7 +80,7 @@ public class MainWindowController implements Initializable
 
     private void fillDropDown()
     {
-        List<String> options  = new ArrayList<String>(Arrays.asList("Író","Cím","Kód"));
+        List<String> options  = new ArrayList<String>(Arrays.asList("Szerző","Cím","Cutter-szám"));
         ObservableList<String> dropdownOptions = FXCollections.observableArrayList(options);
         searchByDropdown.setItems(dropdownOptions);
     }
@@ -139,11 +139,11 @@ public class MainWindowController implements Initializable
         if (searchByDropdown.getSelectionModel().getSelectedItem() != null) {
             List<Book> resultList = new ArrayList<>();
             String searchTerm = searchByDropdown.getSelectionModel().getSelectedItem().toString();
-            if (searchTerm.equals("Író")) {
+            if (searchTerm.equals("Szerző")) {
                 resultList = bookDAO.bookRead(SearchBy.AUTHOR, searchField.getText());
             } else if (searchTerm.equals("Cím")) {
                 resultList = bookDAO.bookRead(SearchBy.TITLE, searchField.getText());
-            } else if (searchTerm.equals("Kód")) {
+            } else if (searchTerm.equals("Cutter-szám")) {
                 resultList = bookDAO.bookRead(SearchBy.ID, searchField.getText());
             }
             if (resultList != null) {
