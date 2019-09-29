@@ -60,7 +60,19 @@ A könyvtár azzal a kéréssel fordult felénk, hogy modernizáljuk a katalógu
 * <p align="justify">Minden könyv rendelkezik egyedi azonosítóval.</p>
 
 ### Tervezett üzleti folyamatok modellje
-<p align="justify">Igyekszünk a Pajkaréti Közösségi Könyvtár által nyújtott követelményspecifikációban leírtaknak minden pontban megfelelő rendszert létrehozni, viszont az új olvasók hozzáadását a próbaprogram fejlesztése során nem tudjuk biztosítani.</p>
+<p align="justify">A Követelményspecifikációban meghatározott pontoknak az alábbi módon tudunk eleget tenni egy olyan rendszer megalkotásával, amelyre az alábbi pontok a jellemzőek:</p>
+
+* <p align="justify">A könyvtári dolgozó gépére kerül a program és ez azt jelenti, hogy az informatikai biztonsági kérdéseket, az adatok védelmét lokálisan szükséges megoldani. A későbbi közrebocsátás miatt a szoftvert könnyen kezelhetőnek tervezzük, tehát a számítógép megfelelő kezelésével oldható meg az, hogy csak a dolgozó férhessen hozzá az éles adatokhoz, a későbbiekben ez pedig nem szükséges.</p>
+* <p align="justify">A program tartalmazza az állomány összes könyvet és a hozzájuk tartozó kölcsönzési információkat.</p>
+* <p align="justify">A szoftver kezeli az olvasói adatokat és a hozzájuk tartozó kölcsönzési információkat.</p>
+* <p align="justify">A könyvtári dolgozó a Narvál 1.0 segítségével képes:</p>
+
+    * <p align="justify">könyvkölcsönzés nyilvántartására</p>
+
+        * <p align="justify">a folyamatban lévő, még nem lezárt kölcsönzések információinak lekérdezésére</p>
+        * <p align="justify">új kölcsönzés létrehozására, ami a következőket foglalja magában: az olvasóhoz egy kölcsönzést rendel hozzá, ami tartalmazza a kikölcsönzött könyvet, a kölcsönzés dátumát, a lejárati dátumot, illetve a visszaviteli dátumot (nem lezárt kölcsönzés esetén ez utóbbi alapértelmezetten üres)</p>
+    * <p align="justify">a kölcsönzés lezárására: visszavitel esetén a kölcsönzés során érintett könyv állapotának elérhetővé állítása, visszaviteli dátum hozzáadása a kölcsönzéshez</p>
+    * <p align="justify">a teljes könyvállomány közötti keresésre</p>
 
 ### Kapcsolódó pályázatok
 Az alábbi pályázat kapcsolódik a projekthez:
