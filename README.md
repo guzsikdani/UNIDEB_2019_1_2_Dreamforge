@@ -7,7 +7,7 @@
 Az alábbi parancsok futtatásával a narval könyvtárban:
 ```
 mvn package
-java -jar target narval-1.0-SNAPSHOT.jar
+java -jar target/narval-1.0-SNAPSHOT.jar
 ```
 vagy
 ```
