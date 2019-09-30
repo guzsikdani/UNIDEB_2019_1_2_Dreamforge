@@ -3,6 +3,9 @@
 
 <p align="justify">A dokumentációk a Documentation mappából érhetők el, a forráskód pedig a narval mappában található.</p>
 
+Tesztelési dokumentáció:
+https://docs.google.com/spreadsheets/d/1RWbhHJpOBhOBkArh4C1Zq8McSeFSKTAiOOysGdUI9VI/edit#gid=0
+
 ## Használat
 Az alábbi parancsok futtatásával a narval könyvtárban:
 ```
